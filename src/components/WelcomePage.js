@@ -2,7 +2,7 @@ import React from "react";
 import { Route, Link } from "react-router-dom"
 
 
-export default function WelcomePage() {
+export default function WelcomePage(props) {
   return (
 
     <section className="welcome-page">
@@ -14,9 +14,7 @@ export default function WelcomePage() {
           alt="rick"
         />
 
-        <Link to="/characters">
-        <button>Welcome</button>
-        </Link>
+        
       
       </header>
     </section>

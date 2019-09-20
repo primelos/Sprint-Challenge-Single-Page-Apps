@@ -22,19 +22,24 @@ export default function CharacterList() {
 
   return (
     <section className="character-list">
-      {char.map(item => {
-        return (
-          <CharacterCard 
-          key={item.id}
+
+      {
+
+        char.map(item => {
+        
+          return<CharacterCard
+        
           name={item.name}
           gender={item.gender}
           image={item.image}
-          species={item.species}
+          species={item.species} 
           />
-        )
+          
+        
       })}
       
       {/* <h2>TODO: `array.map()` over your state here!</h2> */}
     </section>
+    
   );
 }
